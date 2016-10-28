@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CollectionView.h"
+#import "ProductRepo.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (strong, nonatomic) NSMutableDictionary * imageDictionary;
+@property (strong, nonatomic) CollectionView * collectionView;
+@property (strong, nonatomic) ProductRepo * productRepo;
 
 @end
-
